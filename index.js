@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql");
 const cTable = require("console.table");
-const db = require("./db");
+const db = require("./db/schema.sql");
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -75,7 +75,7 @@ function startScreen() {
 }
 
 
-//All of the functions below
+//functions
 
 function addDepartment() {
 
